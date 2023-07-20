@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/item1"
+        android:title="Techniques">
+
+        <menu>
+
+            <item android:id="@+id/tech1"
+                android:title="Caesar Cipher" />
+            <item android:id="@+id/tech2"
+                android:title="Monoalphabetic Cipher" />
+            <item android:id="@+id/tech3"
+                android:title="Playfair Cipher" />
+            <item android:id="@+id/tech4"
+                android:title="Hill Cipher" />
+            <item android:id="@+id/tech5"
+                android:title="One Time Padding" />
+
+        </menu>
+
+    </item>
+
+    <item android:id="@+id/item2"
+        android:title="Home" />
+
+    <item android:id="@+id/item3"
+        android:title="Decrypter" />
+
+    <item android:id="@+id/item4"
+        android:title="History" />
+
+    <item android:id="@+id/item5"
+        android:title="About" />
+
+    <item android:id="@+id/item6"
+        android:title="Profile" />
+
+    <item android:id="@+id/item7"
+        android:title="Logout" />
+
+</menu>

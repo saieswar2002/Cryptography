@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_editor_absoluteX="1dp"
+    app:layout_editor_absoluteY="1dp"
+    android:fillViewport="true">
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".About">
+    <include layout="@layout/toolbar" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:fontFamily="sans-serif-black"
+            android:text="About"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/green"
+            android:textSize="34sp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/two"
+            android:text="This applicaton is used for encrypting and decrypting the
+messages. This can also be used as a learning application about different techniques of encryption and
+decryption in cryptography."
+            android:textSize="20dp"
+            android:textColor="@color/green"
+            android:gravity="center_horizontal"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/two"
+            android:text="When the applicaton is opened the home activity appears on the screen, for the
+purpose of encryption click on encrypter option. Then on the encrypter activity, enter the message that
+you want to encrypt, below that choose the method that you want to use for the encryption. Click on encrypt button
+for encrypting. For resetting the setup use reset button and for copying the encrypted message use copy button.
+Do the same for decrypting a message in the decrypter activity."
+            android:textSize="20dp"
+            android:textColor="@color/green"
+            android:gravity="center_horizontal"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/two"
+            android:text="There is an overflow menu on the encrypter anctiviy. On the overflow menu you can see different options. For learning about working of
+each technique select Techniques option and choose the required technique. For navigating to home activity
+select Home, For navigating to decrypter activity select Decrypter, To see the history of your encrypting or decrypting
+select Histoy."
+            android:textSize="20dp"
+            android:textColor="@color/green"
+            android:gravity="center_horizontal"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/green"
+            android:layout_gravity="right"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Developers"
+            android:fontFamily="sans-serif-black"
+            android:textSize="25dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/green"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:text="G.Janaki Sri Ram"
+            android:fontFamily="@font/two"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/green"
+            android:layout_gravity="right"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="20dp"
+            android:text="Sd.Arif"
+            android:fontFamily="@font/two"
+            android:textSize="15dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/green"
+            android:layout_gravity="right"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="20dp"
+            android:text="G.Sai Eswar"
+            android:fontFamily="@font/two"
+            android:textSize="15dp" />
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

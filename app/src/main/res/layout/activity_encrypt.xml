@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_editor_absoluteX="1dp"
+    app:layout_editor_absoluteY="1dp"
+    android:fillViewport="true" >
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img"
+    tools:context=".encrypt">
+    <include layout="@layout/toolbar1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Encrypter"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/green"
+        android:textSize="34sp"
+         />
+
+    <EditText
+        android:id="@+id/e1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:width="300dp"
+        android:height="50dp"
+        android:background="@drawable/dropdown"
+        android:hint="Enter the message"
+        android:paddingLeft="12sp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/green"
+        android:textColorHint="@color/green"
+         />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="228dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/dropdown"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:width="200dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/green"
+        android:text="Encrypt"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/dropdown"
+        android:hint="This is encrypted message"
+        android:padding="12sp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/green"
+        android:textColorHint="@color/green"
+        android:textSize="20dp"
+        />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+    <Button
+        android:id="@+id/b2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:width="150dp"
+        android:background="@color/green"
+        android:text="Copy"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/b3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="150dp"
+        android:background="@color/green"
+        android:text="Reset"
+        android:layout_margin="20dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:width="300dp"
+            android:height="50dp"
+            android:background="@drawable/dropdown"
+            android:hint="Enter mobile number"
+            android:paddingLeft="12sp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/green"
+            android:textColorHint="@color/green"
+            />
+        <Button
+            android:id="@+id/intent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:width="200dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/green"
+            android:text="Send"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

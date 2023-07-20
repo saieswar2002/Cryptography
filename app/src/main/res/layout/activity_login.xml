@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".Login">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/toolbar" />
+
+
+        <TextView
+            android:id="@+id/head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Login"
+            android:gravity="center_horizontal"
+            android:textColor="@color/green"
+            android:textSize="34sp" />
+
+        <EditText
+            android:id="@+id/l_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="350dp"
+            android:textSize="20dp"
+            android:height="50dp"
+            android:background="@drawable/dropdown"
+            android:hint="Enter E-mail"
+            android:paddingLeft="12sp"
+            android:textColor="@color/green"
+            android:textColorHint="@color/green"
+            android:layout_below="@id/head"
+            android:layout_marginTop="100dp"
+            android:layout_centerInParent="true"/>
+
+
+        <EditText
+            android:id="@+id/l_pswrd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/l_email"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:width="350dp"
+            android:height="50dp"
+            android:background="@drawable/dropdown"
+            android:hint="Enter Password"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:paddingLeft="12sp"
+            android:textColor="@color/green"
+            android:textColorHint="@color/green"
+            android:textSize="20dp" />
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/l_email"
+            android:layout_marginLeft="300sp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="-50dp" />
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/l_pswrd"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:width="200dp"
+            android:background="@color/green"
+            android:text="Login"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/i"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="If new user register below"
+            android:textColor="@color/green"
+            android:textSize="20dp"
+            android:layout_below="@+id/login_button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+        <TextView
+            android:id="@+id/reg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:layout_below="@id/i"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/f_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgotten password???"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:layout_below="@id/reg"
+            android:layout_marginTop="5dp"/>
+
+    </RelativeLayout>
+</ScrollView>
